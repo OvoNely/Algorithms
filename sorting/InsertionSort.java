@@ -4,6 +4,7 @@ public class InsertionSort {
 						
 		for (int j = 1; j < arr.length; j++) {
 			int key = arr[j];
+			// вставка A[i] в сортированную последовательность A[1..j-1]
 			int i = j - 1;
 			while (i >= 0 && arr[i] > key) {
 				arr[i + 1] = arr[i];
